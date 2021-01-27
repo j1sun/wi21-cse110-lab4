@@ -1,0 +1,1 @@
+1. Since i is a variable declared by `var`, it will remain at the end of the `for` loop and equal `prices.length`. Then, on line 11, `prices.length` will be printed to the console.
