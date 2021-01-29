@@ -23,3 +23,10 @@
 11. Since `finalPrice` is a variable declared by `const` at the start of the function, it will not change in the `for` loop. Then, on line 13, `[]` will be printed to the console.
 
 12. Since `finalPrice` is a variable declared by `const` at the start of the function, it will not change in the `for` loop. Thus, we end up returning `discounted = []`.
+
+13.
+    1. `student.name`
+    2. `student['Grad Year']`
+    3. `student.greeting()`
+    4. `student['Favorite Teacher']['name']`
+    5. `student.courseLoad[0]`
