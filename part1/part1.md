@@ -30,3 +30,39 @@
     3. `student.greeting()`
     4. `student['Favorite Teacher']['name']`
     5. `student.courseLoad[0]`
+
+14.
+    1. Evaluates to '32' since '3' + 2 is interpreted as string concatenation.
+    2. Evaluates to 1 since '3' - 2 is interpreted as subtraction, and '3' is converted to a number.
+    3. Evaluates to 3, since 3 + null is interpreted as addition, and null is defined as 0.
+    4. Evaluates to '3null', since '3' + null is interpreted as string concatenation.
+    5. Evaluates to 4, since true + 3 is interpreted as addition, and true is defined as 1.
+    6. Evaluates to 0, since false + null is interpreted as addition, and both false and null are defined as 0.
+    7. Evaluates to '3undefined', since "3" + undefined is interpreted as string concatenation.
+    8. Evaluates to NaN, since "3" - undefined is interpreted as subtraction, and subtracting undefined results in NaN.
+
+15. 
+    1. Evaluates to true, since both values are converted to numbers and 2 > 1.
+    2. Evaluates to false, since the character '2' comes after the character '1' in '12'.
+    3. Evaluates to true, since the == operator converts both values to numbers and 2 == 2.
+    4. Evaluates to false, since the === operator does not perform type conversion.
+    5. Evaluates to false, since both values are converted to numbers and true (converted to 1) does not equal 2.
+    6. Evaluates to true, since the Boolean() function passes in 2 and returns true.
+
+16. The `==` operator performs type conversions when comparing, while the `===` operator does not.
+
+17. 'How are you?' is printed, since `2 == true` evaluates to false, while `2` evaluates to true (it is truthy, ie. not defined as false).
+
+18. See `part1-question18.js`.
+
+19. `[6, 8, 10]` is returned. For each iteration of the `for` loop, we push the results of `doSomething(array[i], function(x) { return x * 2 })` into `newArr`. For the first item, 1, we call `doSomething(1, function(x) { ... })`, which then returns the result of `function(x)` where `x` equals `1 + 2`; that function returns `3 * 2` which equals `6`. This repeats for each of the other items in the array and result in `8` and `10`, which are then pushed into the array and returned.
+
+20. See `part1-question20.js`.
+
+21. The output is:
+```
+1
+4
+3
+2
+```
